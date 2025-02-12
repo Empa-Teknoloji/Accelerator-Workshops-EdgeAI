@@ -4,7 +4,7 @@
 </p>
 
 # 2) ST Platformları İçin Edge-AI Çözümleri Geliştirme
-Empa Electronics tarafından düzenlenen Accelerators Workshops serimizin Uçta Yapay Zeka adımına hoşgeldiniz.  
+Empa Electronics tarafından düzenlenen Accelerators Workshops serimizin "Uçta Yapay Zeka - Ankara" adımına hoşgeldiniz.  
 Bu kılavuz, modern makine öğrenimi kütüphaneleri ve standart yaklaşımlarla geliştilecek "El Karakterleri Tanıma" uygulamamızın geliştirme adımlarında size rehberlik edecektir.
 
 Aktivite içeriği olan "El Karakteri Tanıma" uygulaması,  workshop için Empa Electronics tarafından tasarlanmış ve üretilmiş Kafa Kart (_Mind Board_) kullanılarak gerçekleştirilecektir. Kart üzerindeki ivmeölçer ve jiroskop sensörlerinden alınan toplam 6 eksenli sensör ölçümleri, bir yapay zeka modeline girdi olarak kullanılacak ve uç birim (Kafa Kart) üzerinde 6 farklı el karakterini sınıflandırmak amacıyla kullanılacaktır. Kafa kartın elde tutulmasıyla gerçekleştirilecek el karakterleri görsel ile açıklanmıştır.
@@ -21,10 +21,13 @@ Aktivite için gerekli program ve gereçlerin kurulum adımlarını içerir.
 Aktivite içeriği olan "uçta yapay zeka" uygulamasının geliştirme adımlarını içerir.
 
 ### ↳ [Model Testi: El Karakteri Sınıflandırma](Uygulama_test_hand_character_recognition.ipynb)
-Aktivite içeriği olan "uçta yapay zeka" uygulamasının test adımlarını içerir.
+Aktivite içeriği olan "uçta yapay zeka" uygulamasının yerel ortamda test adımlarını içerir.
 
 ### ↳ [STM32CubeAI Çıktısının MindBoard'a Implementasyonu](Proje_Kurulum.md)
-Aktivite içeriği olan "uçta yapay zeka" uygulamasının test adımlarını içerir.
+Aktivite içeriği olan "uçta yapay zeka" uygulamasının uç birimde çözüm haline getirilmesi için gerekli implementasyon adımlarını içerir.
+
+### ↳ [Model Testi: El Karakteri Sınıflandırma](Uygulama_test_edge_hand_character_recognition.ipynb)
+Aktivite içeriği olan "uçta yapay zeka" uygulamasının uç birimde test adımlarını içerir.
 
 ## ST Platformlarında Uçta Yapay Zeka
 
