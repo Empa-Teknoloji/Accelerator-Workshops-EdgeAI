@@ -20,13 +20,13 @@ Aktivite için gerekli program ve gereçlerin kurulum adımlarını içerir.
 ### ↳ [STM32 Platformları İçin Edge-AI Çözümleri Geliştirme: El Karakteri Sınıflandırma](Uygulama_train_hand_character_recognition.ipynb)
 Aktivite içeriği olan "uçta yapay zeka" uygulamasının geliştirme adımlarını içerir.
 
-### ↳ [Model Testi: El Karakteri Sınıflandırma](Uygulama_test_hand_character_recognition.ipynb)
+### ↳ [Model Testi (Yerel): El Karakteri Sınıflandırma](Uygulama_test_hand_character_recognition.ipynb)
 Aktivite içeriği olan "uçta yapay zeka" uygulamasının yerel ortamda test adımlarını içerir.
 
 ### ↳ [STM32CubeAI Çıktısının MindBoard'a Implementasyonu](Proje_Kurulum.md)
 Aktivite içeriği olan "uçta yapay zeka" uygulamasının uç birimde çözüm haline getirilmesi için gerekli implementasyon adımlarını içerir.
 
-### ↳ [Model Testi: El Karakteri Sınıflandırma](Uygulama_test_edge_hand_character_recognition.ipynb)
+### ↳ [Model Testi (Uçbirim): El Karakteri Sınıflandırma](Uygulama_test_edge_hand_character_recognition.ipynb)
 Aktivite içeriği olan "uçta yapay zeka" uygulamasının uç birimde test adımlarını içerir.
 
 ## ST Platformlarında Uçta Yapay Zeka
