@@ -3,7 +3,7 @@
     style="display: block; margin: 0 auto"/>
 </p>
 
-# 2) ST Platformları İçin Edge-AI Çözümleri Geliştirme 
+# 2) ST Platformlarında Uçta Yapay Zeka Çözümleri Geliştirme
 
 ## Çalışma Ortamı Kurulumu
 ### Bulutta Çalışma Ortamı (Sadece Geliştirme)

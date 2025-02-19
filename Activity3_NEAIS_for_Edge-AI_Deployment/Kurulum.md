@@ -3,8 +3,9 @@
     style="display: block; margin: 0 auto"/>
 </p>
 
-\
-**Bu sayfada, NanoEdge AI Studio'nun Windows ve Ubuntu işletim sistemleri için kurulum adımlarını ele alacağız.**
+# 3) NanoEdge AI Studio ile Edge-AI Çözümleri Geliştirme
+Empa Electronics tarafından düzenlenen Accelerators Workshops serimizin Uçta Yapay Zeka adımına hoşgeldiniz.  
+Bu kılavuzda, NanoEdge AI Studio kullanılarak geliştilecek "El Karakterleri Tanıma" uygulamamız için NanoEdge AI Studio'nun Windows ve Ubuntu işletim sistemlerinde kurulum adımlarını ele alacağız.
 
 ## Kurulum
 

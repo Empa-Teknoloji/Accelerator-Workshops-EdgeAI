@@ -4,14 +4,14 @@
 </p>
 
 
-## Accelerator Workshops'a Hoşgeldiniz!
+## Accelerator Workshops'a hoş geldiniz!
 
 **Merhaba!**
 
-Empa Electronics tarafından düzenlenen Accelerators Workshops serimizin "Uçta Yapay Zeka - Ankara" adımına hoşgeldiniz. Bu açık-kaynaklı repository, workshop etkiliğimizde kullanabileceğiniz tüm gereksinimleri edinebilmeniz ve aktivitelere kolaylıkla eşlik edebilmeniz için sizinle paylaşılmıştır.
+Empa Electronics tarafından düzenlenen Accelerators Workshops serimizin "Uçta Yapay Zeka - Ankara" adımına hoş geldiniz. Bu açık-kaynaklı repository, workshop etkiliğimizde kullanabileceğiniz tüm gereksinimleri edinebilmeniz ve aktivitelere kolaylıkla eşlik edebilmeniz için sizinle paylaşılmıştır.
 
 **Uçta Yapay Zeka**  
-Bir uygulama için geliştirilen yapay zeka çözümlerinin işletilmesi modern sistemlerde iki farklı türde yapılabilmektedir. Bunlardan biri olan bulutta yapay zeka, bir yapay zeka modelinin bulut sunucu üzerinde (örneğin AWS/Azure gibi platformlarda) tesisi ve bu modele gönderilen veri örnekleri için alınan tahminlerin tekrar göndericiye iletilmesi usulüyle çalışmaktadır. Bir diğer alternatif olan uçta yapay zeka, bir modelin doğrudan çözüm için kullanılan bir uç birimde (_edge device_, örneğin: sensör kartı) tesis edilmesi ve girdi veriler için elde edilen tahminlerin doğrudan aynı platform üzerinde el edilebilmesidir. Uçta yapay zeka çözümleri, verinin tahminleme için başka bir platforma gönderilmemesi sebebiyle başta düşük gecikme, düşük bant genişliği, düşük güç tüketimi ve veri gizliliği gibi pek çok getiri sağlamaktadır.
+Bir uygulama için geliştirilen yapay zeka çözümlerinin işletilmesi modern sistemlerde iki farklı türde yapılabilmektedir. Bunlardan biri olan bulutta yapay zeka, bir yapay zeka modelinin bulut sunucu üzerinde (örneğin AWS/Azure gibi platformlarda) tesisi ve bu modele gönderilen veri örnekleri için alınan tahminlerin tekrar göndericiye iletilmesi usulüyle çalışmaktadır. Bir diğer alternatif olan uçta yapay zeka, bir modelin doğrudan çözüm için kullanılan bir uç birimde (_edge device_, örneğin: sensör kartı) tesis edilmesi ve girdi veriler için elde edilen tahminlerin doğrudan aynı platform üzerinde elde edilebilmesidir. Uçta yapay zeka çözümleri, verinin tahminleme için başka bir platforma gönderilmemesi sayesinde başta düşük gecikme, düşük bant genişliği, düşük güç tüketimi ve veri gizliliği gibi pek çok fayda sağlamaktadır.
 
 ## Canlı Demo
 Uçta Yapay Zeka workshop etkinliğimizde gerçekleştirilecek canlı demo gösterimine katılım için herhangi bir kurulum ihtiyacı yoktur. Demo kaynak dosyaları, uygulama içeriklerinin incelenmesi ve etkinlik sonrası referans materyal olarak kullanımı amacıyla paylaşılmaktadır.
