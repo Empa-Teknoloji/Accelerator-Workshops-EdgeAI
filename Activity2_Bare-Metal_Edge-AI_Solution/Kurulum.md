@@ -14,66 +14,108 @@ Aktivite için oluşturulan bulut çalışma ortamı _geliştirme_ ortamı için
 
 ### Yerel Çalışma Ortamı (Sadece Test)
 
-**1- Windows İçin STM32CubeMX & STM32CubeAI**  
+## 1- STM32CubeIDE Kurulumu
 
-Aktivite içeriğinde geliştirilecek çözümün (modelin) ST platformlarına implementasyonu için gerekli STM32CubeMX ve STM32CubeAI ürünlerinin kurulumu adımlarını takip ediniz.
+STM32CubeIDE, STM32 mikrodenetleyicileri ve mikroişlemcileri için gerekli çevresel yapılandırmaların yapılmasını, kod oluşturma ve derlemeyi, kodun hata ayıklama işlemlerini ve cihaza yüklenmesini sağlayan Eclipse tabanlı bir C/C++ geliştirme platformudur.
 
-1.1. STM32CubeMX programını aşağıda verilen yönergeleri izleyerek kurunuz.
-- Verilen adrese gidiniz ve STM32CubeMX-Lin satırına giderek "Get software" ve sırasıyla "Download as a Guest" butonlarını kullanarak indirme linki talebi oluşturunuz. Ardından e-mail adresinize gelen link ile indirmeyi başlatınız.  
-[https://www.st.com/en/development-tools/stm32cubemx.html#get-software](https://www.st.com/en/development-tools/stm32cubemx.html#get-software)
-- İndirilen sıkıştırılmış dosyayı mevcut klasör içerisine ayıklayınız.
-- Ayıklanan klasör içerisindeki .exe uzantılı "SetupSTM32CubeMX..." dosyasını yönetici olarak çalıştırınız.
-- Ardından setup dosyasının çalıştırılmasıyla açılan kurulum yönergesini ön tanımlı seçenekler ile ilerleterek kurulumu tamamlayınız.  
-<img src="./Additionals/CubeMX-Setup-Windows.jpeg" alt="Accelerator Workshops" width="600"/>
+Öncelikle [buradan](https://www.st.com/en/development-tools/stm32cubeide.html#get-software) STM32CubeIDE 1.17.0 (en son sürüm) versiyonunu indiriniz.
+Aşağıdaki seçenekler arasından işletim sisteminize uygun olanı indirip kurulumunu gerçekleştirin. İndirme işlemini gerçekleştirmek için **lisans sözleşmesini onaylamanız** ve **MyST hesabı oluşturup giriş yapmanız** gerekmektedir.
+<br />
+<div align="center">
+  <img width="100%" height="100%" src="Additionals/kurulum1.png">
+</div>
+<br />
 
-1.2. STM32CubeAI eklentisini aşağıda verilen yönergeleri izleyerek kurunuz.
+NOT 1: Kurulum yapacağınız hedef klasör yolunda Türkçe karakter ve boşluk olmadığına dikkat ediniz.
 
-STM32CubeMX ürünün kurulumu sonrası STM32CubeAI eklentisinin kurulması için sırasıyla:
+NOT 2: Kurulum sırasında ST-LINK ve SEGGER J-Link sürücülerinin yüklenip yüklenmeyeceği sorulacaktır. Bu sürücüleri seçip yükleme işlemlerine devam ediniz.
 
-* STM32CubeMX programını açtıktan sonra gelen arayüz içerisinde "Manage software installations" bölümünde yer alan "Install / Remove" butonuna tıklayınız.  
-<img src="./Additionals/CubeMX-Interface.png" alt="Accelerator Workshops" width="600"/>
+## 2- STM32CubeProgrammer Kurulumu
 
-* Açılan mini pencere içerisinde STMicroelectronics sekmesi altındaki **"X-CUBE-AI"** paketini bularak güncel sürüm olan **"Artificial Intellicenge 9.0.0"** versiyonunu seçeerek **Install** butonu ile kurulumu başlatınız.
-<img src="./Additionals/CubeAI-Package.png" alt="Accelerator Workshops" width="600"/>
+STM32CubeProgrammer, STM32 mikrodenetleyicileri programlama ve konfigürasyonlarını ayarlamak için tasarlanmış grafiksel bir araçtır.
+<br />Öncelikle [buradan](https://www.st.com/en/development-tools/stm32cubeprog.html#get-software) **STM32CubePrg 2.18.0** (son sürüm) versiyonunu indiriniz. Aşağıdaki seçenekler arasından işletim sisteminize uygun olanı indirip kurulumunu gerçekleştirin. İndirme işlemini gerçekleştirmek için **lisans sözleşmesini onaylamanız** ve **myST hesabınıza giriş yapmış olmanız** gerekmektedir.
 
-* Açılan pencerede ST hesabı ile oturum açma sonrası ön tanımlı değerler ile kurulumu ilerletiniz ve bitiriniz.  
-<img src="./Additionals/CubeAI-Version.png" alt="Accelerator Workshops" width="600"/>
+<br />
+<div align="center">
+  <img width="100%" height="100%" src="Additionals/cubeprogrammer.png">
+</div>
+<br />
 
-**2- Ubuntu İçin STM32CubeMX & STM32CubeAI Kurulumu**  
+## 3- Tera Term Kurulumu
+Tera Term, kullanıcıların seri port iletişimi sağlayarak uzak bilgisayarlara erişmelerine ve UART gibi çeşitli iletişim protokolleri aracılığıyla cihazlarla iletişim kurmalarına olanak tanır. Bilgisayar ile geliştirme kartı arasında UART üzerinden iletişim sağlamak için bu program kullanılacaktır.
+Github [sayfasından](https://github.com/TeraTermProject/teraterm/releases) Assets altından dosyasını indiriniz ve kurulumu gerçekleştiriniz.<br />
+<div align="center">
+  <img width="100%" height="100%" src="Additionals/teraterm.png">
+</div>
+<br />
 
-Aktivite içeriğinde geliştirilecek çözümün (modelin) ST platformlarına implementasyonu için gerekli STM32CubeMX ve STM32CubeAI ürünlerinin kurulumu adımlarını takip ediniz.
+## 4- SW Paketlerinin Kurulumu
+Öncelikle paketlerin kurulumu işlemi için MySt hesabının girilmesi gerekmektedir. Bunun için **Help** sekmesinin altındaki **STM32Cube updates** seçeneğinin yanından **Connection to myST** seçeneğinin seçilmesi gerekmektedir. 
+<div align="center">
+  <img width="100%" height="100%" src="Additionals/myst_login.png">
+</div>
 
-2.1. STM32CubeMX programını aşağıda verilen yönergeleri izleyerek kurunuz.
-- Verilen adrese gidiniz ve STM32CubeMX-Lin satırına giderek "Get software" ve sırasıyla "Download as a Guest" butonlarını kullanarak indirme linki talebi oluşturunuz. Ardından e-mail adresinize gelen link ile indirmeyi başlatınız.  
-[https://www.st.com/en/development-tools/stm32cubemx.html#get-software](https://www.st.com/en/development-tools/stm32cubemx.html#get-software)
+<br />
 
-- İndirilen sıkıştırılmış dosyayı mevcut klasör içerisine ayıklayınız.
-```
-sudo apt install unzip
-unzip en.stm32cubemx-lin* -d stm32cubemx
-```
-- Ayrıştırılan klasör içerisine giderek setup için verilen dosya için uygun dosya yetkilendirmesini ayarlayınız.
-```
-cd stm32cubemx
-sudo chmod 777 SetupSTM32CubeMX*
-./SetupSTM32CubeMX*
-```
-- Ayrıştılan klasör içerisindeki setup dosyasını çalıştırınız.
-```
-./SetupSTM32CubeMX*
-```
-- Ardından setup dosyasının çalıştırılmasıyla açılan kurulum yönergesini ön tanımlı seçenekler ile ilerleterek kurulumu tamamlayınız.  
-<img src="./Additionals/CubeMX-Setup-Linux.png" alt="Accelerator Workshops" height="350"/>
+Ardından açılan ekranda **Enter myST account information seçeneğine** tıklayın.
+<div align="center">
+  <img width="100%" height="100%" src="Additionals/myst_connection.png">
+</div>
+<br />
 
-2.2. STM32CubeAI eklentisini aşağıda verilen yönergeleri izleyerek kurunuz.
+Ve hesabınıza giriş yapın.
+<div align="center">
+  <img width="100%" height="100%" src="Additionals/login.png">
+</div>
+<br />
 
-STM32CubeMX ürünün kurulumu sonrası STM32CubeAI eklentisinin kurulması için sırasıyla:
+# 4-A) U5 Paketinin Kurulumu
+Uygulamalarda STM32U5 ailesinden bir mikrodenetleyici kullanılacağı için U5 paketlerinin indirilmesi gereklidir.<br />
+Öncelikle STM32CubeIDE programını başlatınız.
 
-* STM32CubeMX programını açtıktan sonra gelen arayüz içerisinde "Manage software installations" bölümünde yer alan "Install / Remove" butonuna tıklayınız.  
-<img src="./Additionals/CubeMX-Interface.png" alt="Accelerator Workshops" width="600"/>
+Açılan STM32CubeIDE uygulaması içerisinde **Help** sekmesi altında **Configuration Tools** seçeneğinin yanındaki **Manage Embedded Software Packages** seçeneğine tıklayınız.
+<div align="center">
+  <img width="100%" height="100%" src="Additionals/manage_embedded_software_packages.png">
+</div>
 
-* Açılan mini pencere içerisinde STMicroelectronics sekmesi altındaki **"X-CUBE-AI"** paketini bularak güncel sürüm olan **"Artificial Intellicenge 9.0.0"** versiyonunu seçeerek **Install** butonu ile kurulumu başlatınız.
-<img src="./Additionals/CubeAI-Package.png" alt="Accelerator Workshops" width="600"/>
+<br />
 
-* Açılan pencerede ST hesabı ile oturum açma sonrası ön tanımlı değerler ile kurulumu ilerletiniz ve bitiriniz.  
-<img src="./Additionals/CubeAI-Version.png" alt="Accelerator Workshops" width="600"/>
+Ardından **STM32Cube MCU Packages** sekmesi altında **STM32U5->STM32Cube MCU Package for STM32U5 Series** yanındaki **1.7.0** (en son sürüm) sürümününün kutucuğunu işaretleyiniz ve install'a tıklayarak yükleme işlemini gerçekleştiriniz. <br />
+<div align="center">
+  <img width="100%" height="100%" src="Additionals/u5_install.png">
+</div>
+<br />
+
+# 4-B) X-CUBE-ISPU Yazılım Paketi Kurulumu 
+X-CUBE-ISPU yazılım paketinin yüklenmesi için STM32CubeIDE uygulaması içerisinde **Help** sekmesi altında **Configuration Tools** seçeneğinin yanındaki **Manage Embedded Software Packages** seçeneğine tıklayınız.
+<br />
+<div align="center">
+  <img width="100%" height="100%" src="Additionals/manage_embedded_software_packages.png">
+</div>
+<br />
+
+Açılan ekranda yukarıdaki sekmelerden STMicroelectronics seçilir. Ardından paketlerden X-CUBE-ISPU paketi seçilir. Ve **2.1.0 versiyonunun** (en son sürümü indiriniz) yanındaki kutucuk işaretlenir. Ve install'a tıklanarak indirme işlemi başlatılır. Yükleme işlemi sırasında kullanıcı girişinin yapılmış olması ve lisans sözleşmesini kabul edilmesi gerekmektedir. Paketin yüklenme işlemi tamamlanmıştır. 
+
+<br />
+<div align="center">
+  <img width="100%" height="100%" src="Additionals/ispu_install.png">
+</div>
+<br />
+
+# 4-C) X-CUBE-AI Yazılım Paketi Kurulumu 
+X-CUBE-AI yazılım paketinin yüklenmesi için STM32CubeIDE uygulaması içerisinde **Help** sekmesi altında **Configuration Tools** seçeneğinin yanındaki **Manage Embedded Software Packages** seçeneğine tıklayınız.
+<br />
+<div align="center">
+  <img width="100%" height="100%" src="Additionals/manage_embedded_software_packages.png">
+</div>
+<br />
+
+Açılan ekranda yukarıdaki sekmelerden STMicroelectronics seçilir. Ardından paketlerden X-CUBE-AI paketi seçilir. Ve **10.0.0 versiyonunun** (son sürüm) yanındaki kutucuk işaretlenir. Ve install'a tıklanarak indirme işlemi başlatılır. Yükleme işlemi sırasında kullanıcı girişinin yapılmış olması ve lisans anlaşmasının kabul edilmesi gerekmektedir. Paketin yüklenme işlemi tamamlanmıştır.
+
+<br />
+<div align="center">
+  <img width="100%" height="100%" src="Additionals/cubeai_package.png">
+</div>
+<br />
+
+Gerekli kurulumlar tamamlanmıştır.
