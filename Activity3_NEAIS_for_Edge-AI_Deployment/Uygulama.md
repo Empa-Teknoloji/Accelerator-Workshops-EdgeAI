@@ -3,14 +3,15 @@
     style="display: block; margin: 0 auto"/>
 </p>
 
-\
-**Bu sayfada, NanoEdge AI Studio ile bir AI modeli geliştirmenin tüm adımlarını inceleyeceğiz.**
+# 3) NanoEdge AI Studio ile Edge-AI Çözümleri Geliştirme
+Empa Electronics tarafından düzenlenen Accelerators Workshops serimizin Uçta Yapay Zeka adımına hoş geldiniz.  
+Bu kılavuz, NanoEdge AI Studio kullanılarak geliştilecek "El Karakterleri Tanıma" uygulamamızın geliştirme adımlarında size rehberlik edecektir.
 
 ## 1. Ön İşleme Süreçleri
 
 NanoEdge AI Studio esas olarak **sensör** uygulamaları için yapılmıştır ve sensör uygulamaları **zaman serisi** verilerinden oluşur. Bu nedenle, kullanıcıların bu uygulamalar için uygun giriş verilerini kullanmaları gerekir, böylece modeller doğru bir şekilde oluşturulabilir.
 
-Uygun giriş verileri, toplanan verinin yapılmak istenen uygulamanın özelliklerine uygun olacak bir sampling size seçilerek gruplanması anlamına gelmektedir. 
+Uygun giriş verileri, toplanan verinin yapılmak istenen uygulamanın özelliklerine uygun olacak bir sampling size seçilerek gruplanması anlamına gelmektedir.
 
 ![Untitled](./Additionals/NEAIS-Preprocesses/Untitled0.png)
 
