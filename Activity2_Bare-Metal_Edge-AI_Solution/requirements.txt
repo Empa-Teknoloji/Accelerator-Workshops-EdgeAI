@@ -3,12 +3,9 @@ pandas
 scikit-learn
 tensorflow==2.15.0
 opencv-python
-paho-mqtt
 requests
-awsiotsdk
-keyboard
-pyserial
 ipykernel
 tf2onnx
 onnxruntime
 matplotlib
+skl2onnx
