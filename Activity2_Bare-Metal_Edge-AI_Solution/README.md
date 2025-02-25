@@ -17,8 +17,10 @@ Aktivite içeriği olan "El Karakteri Tanıma" uygulaması,  workshop için Empa
 Aktivite için gerekli program ve gereçlerin kurulum adımlarını içerir.
 
 ## Uygulama
-### ↳ [STM32 Platformlarında Uçta Yapay Zeka: El Karakteri Sınıflandırma](https://colab.research.google.com/drive/1rSpHM_JGy5NAFCWkZ7TPcCt1fxc8kywF?usp=sharing)
-Aktivite içeriği olan "El Karakteri Tanıma" uygulamasının geliştirme adımlarını içerir.
+### ↳ [STM32 Platformlarında Uçta Yapay Zeka Çözümleri: El Karakteri Tanıma (Tensorflow ile CNN)](https://colab.research.google.com/drive/1hXrLQyYdJ7H2DgL7fW6nQtDmb_dmDuge)
+Demo içeriği olan "El Karakteri Tanıma" uygulamasının **Tensorflow** kütüphanesi kullanılarak oluşturulmuş **CNN** modeli ile Google Colab üzerindeki geliştirilmesini konu alan uygulama adımlarını içerir.
+### ↳ [STM32 Platformlarında Uçta Yapay Zeka Çözümleri: El Karakteri Tanıma (scikit-learn ile Random Forest)](https://colab.research.google.com/drive/1bbg1bfcpoIIn0kcI18elS_EtdG5Iee-f)
+Demo içeriği olan "El Karakteri Tanıma" uygulamasının **scikit-learn** kütüphanesi kullanılarak oluşturulmuş **Random Forest** modeli ile Google Colab üzerindeki geliştirilmesini konu alan uygulama adımlarını içerir.
 
 ### ↳ [Model Testi (Yerel): El Karakteri Sınıflandırma](Uygulama_test_local_hand_character_recognition.ipynb)
 Aktivite içeriği olan "El Karakteri Tanıma" uygulamasının yerel ortamdaki test adımlarını içerir.
