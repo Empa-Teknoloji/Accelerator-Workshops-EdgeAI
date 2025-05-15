@@ -98,12 +98,12 @@ Açılan ekranda yukarıdaki sekmelerden STMicroelectronics seçilir. Ardından 
 </div>
 <br />
 
-# 5) NanoeEdge AI Studio
+# 5) NanoEdge AI Studio
 
 **Bu kısımda, NanoEdge AI Studio'nun Windows ve Ubuntu işletim sistemleri için kurulum adımlarını ele alacağız.**
 
 
-**Windows** ve **Ubuntu** için NEAIS aşağıdaki linkten indirilebilir.
+**Windows** ve **Ubuntu** için NEAIS aşağıdaki linkten indirilip kurulum yapılabilir. MacOS için henüz bir destek bulunmamakta olup, çeşitli *Virtual Windows/Ubuntu Machine* yöntemleri (Parallels Desktop gibi) alternatif yöntemler kullanılabilir.
 
 **[https://stm32ai.st.com/download-nanoedgeai/](https://stm32ai.st.com/download-nanoedgeai/)**
 

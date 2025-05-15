@@ -8,7 +8,7 @@
 
 **Merhaba!**
 
-Empa Electronics tarafından düzenlenen Accelerators Workshops serimizin "Uçta Yapay Zeka - Ankara" adımına hoş geldiniz. Bu açık-kaynaklı repository, workshop etkiliğimizde kullanabileceğiniz tüm gereksinimleri edinebilmeniz ve aktivitelere kolaylıkla eşlik edebilmeniz için sizinle paylaşılmıştır.
+Empa Electronics tarafından düzenlenen Accelerators Workshops etkinliğimize hoş geldiniz. Bu açık-kaynaklı repository, workshop etkiliğimizde kullanabileceğiniz tüm gereksinimleri edinebilmeniz ve aktivitelere kolaylıkla eşlik edebilmeniz için sizinle paylaşılmıştır.
 
 **Uçta Yapay Zeka**  
 Bir uygulama için geliştirilen yapay zeka çözümlerinin işletilmesi modern sistemlerde iki farklı türde yapılabilmektedir. Bunlardan biri olan bulutta yapay zeka, bir yapay zeka modelinin bulut sunucu üzerinde (örneğin AWS/Azure gibi platformlarda) tesisi ve bu modele gönderilen veri örnekleri için alınan tahminlerin tekrar göndericiye iletilmesi usulüyle çalışmaktadır. Bir diğer alternatif olan uçta yapay zeka, bir modelin doğrudan çözüm için kullanılan bir uç birimde (_edge device_, örneğin: sensör kartı) tesis edilmesi ve girdi veriler için elde edilen tahminlerin doğrudan aynı platform üzerinde elde edilebilmesidir. Uçta yapay zeka çözümleri, verinin tahminleme için başka bir platforma gönderilmemesi sayesinde başta düşük gecikme, düşük bant genişliği, düşük güç tüketimi ve veri gizliliği gibi pek çok fayda sağlamaktadır.
@@ -56,11 +56,13 @@ Workshop etkiliğinde kullanılacak çalışma ortamlarının kurulumları sonra
 **Aktivite-2**
 - [ ] Colab Notebook Örneği (Kurulum Gerektirmez)
 - [ ] STM32CubeIDE (STM32CubeMX & STM32CubeAI)
+- [ ] STM32CubeProgrammer
 - [ ] Aktivite-2 Kaynak Dosyaları
 
 **Aktivite-3**
 - [ ] NanoEdge AI Studio
 - [ ] STM32CubeIDE (STM32CubeMX)
+- [ ] STM32CubeProgrammer
 - [ ] Aktivite-3 Kaynak Dosyaları
 
 ## Güncellemeler
@@ -76,6 +78,6 @@ Aktivite çalışma ortamlarının kurulumlarıyla ilgili soru ve taleplerinizi 
 
 Workshop aktiviteleri için sağlanan çalışma ortamlarının son hallerini edinmek için Güncellemeler başlığını kontrol ediniz. Kurulumlarını bitirmiş olduğunuz çalışma ortamınıza mevcut güncellemeleri eklemek için terminalinizde AI_Workshop klasörünü açınız ve "git pull" komutu ile güncellemeleri ekleyiniz:
 ```
-cd Workshop_Workspace/Accelerator_Workshop_EdgeAI
+cd Workshop_Workspace/Accelerator-Workshop-EdgeAI
 git pull origin master
 ```

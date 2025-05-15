@@ -55,15 +55,16 @@ Aktivite içeriği olan "uçta yapay zeka" uygulamasının geliştirme adımlar�
 - **Data Logger (DL)**
 - **Data Manipulation (DM)**
 - **Sampling Finder (SF)**
+- **Feature Importance (FI)**
 
 **8- Modeller**
-- **Anomaly Detection (AD)**
+- **Detect Anomalies (AD)**
     - "Modellerin hedef ortama kendiliğinden uyum sağlamalarını ve anormallikleri kendiliğinden tespit etmelerini istiyorum."
-- **1-Class Sınıflandırma (1CC)**
+- **Detect Outliers (O)**
     - "Herhangi bir aykırı değeri tespit etmek istiyorum."
-- **n-Class Sınıflandırma (nCC)**
+- **Classify (C)**
     - "Hangi sorunların meydana geldiğini isim isim bilmek istiyorum."
-- **Extrapolation (E)**
+- **Extrapolate (E)**
     - "Düzeltici eylemler için zaman kazanmak amacıyla titreşim seviyesini önceden tahmin etmek istiyorum."
 
 **Kaynaklar & Okuma Önerileri** 

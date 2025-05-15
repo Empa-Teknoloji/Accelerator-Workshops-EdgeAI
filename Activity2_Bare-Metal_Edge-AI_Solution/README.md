@@ -4,7 +4,7 @@
 </p>
 
 # 2) ST Platformlarında Uçta Yapay Zeka Çözümleri Geliştirme
-Empa Electronics tarafından düzenlenen Accelerators Workshops serimizin "Uçta Yapay Zeka - Ankara" adımına hoş geldiniz.  
+Empa Electronics tarafından düzenlenen Accelerators Workshops etkinliğimize hoş geldiniz.  
 Bu kılavuz, modern makine öğrenimi kütüphaneleri ve standart yaklaşımlarla oluşturulacak "El Karakterleri Tanıma" uygulamamızın geliştirme adımlarında size rehberlik edecektir.
 
 Aktivite içeriği olan "El Karakteri Tanıma" uygulaması,  workshop için Empa Electronics tarafından tasarlanmış ve üretilmiş Kafa Kart (_Mind Board_) kullanılarak gerçekleştirilecektir. Kart üzerindeki ivmeölçer ve jiroskop sensörlerinden alınan toplam 6 eksenli sensör ölçümleri, bir yapay zeka modeline girdi olarak kullanılacak ve uç birim (Kafa Kart) üzerinde 5 farklı el karakterini sınıflandırmak amacıyla kullanılacaktır. Kafa Kart'ın elde tutulmasıyla gerçekleştirilecek el karakterleri görsel ile açıklanmıştır.
