@@ -78,6 +78,6 @@ Aktivite çalışma ortamlarının kurulumlarıyla ilgili soru ve taleplerinizi 
 
 Workshop aktiviteleri için sağlanan çalışma ortamlarının son hallerini edinmek için Güncellemeler başlığını kontrol ediniz. Kurulumlarını bitirmiş olduğunuz çalışma ortamınıza mevcut güncellemeleri eklemek için terminalinizde AI_Workshop klasörünü açınız ve "git pull" komutu ile güncellemeleri ekleyiniz:
 ```
-cd Workshop_Workspace/Accelerator-Workshop-EdgeAI
+cd Workshop_Workspace/Accelerator-Workshops-EdgeAI
 git pull origin master
 ```
