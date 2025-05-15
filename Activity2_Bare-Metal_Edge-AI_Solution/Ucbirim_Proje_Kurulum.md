@@ -20,14 +20,14 @@ Açılan IOC sayfasından yukarıda bulunan Software Packs->Select Component'a t
 "Ok" butonu ile IOC konfigurasyon sayfasına geri döndüğümüzde Middleware and Software Packs sekmesinde X-CUBE-AI seçeneğinin açıldığını göreceğiz. Bu seçeneğe tıkladığımızda Mode sekmesinde bulunan Artificial Intelligence seçeniğinin tikli olması gerekmektedir. Ardında
 Aşağıda Configuration sekmesinde Main ve + simgesinin olduğunu göreceksiniz.
  
-Burada + simgesine basıp yeni bir network oluşturabilirsiniz. Cube AI kullanılırken seçebileceğimiz 3 farklı model tipi vardır. TFLite, Keras ve ONNX. Prebuilt olarak repoda paylastığımız model bir TFLite modelidir, bu yüzden model olarak TFLite'yi seçip Browse ile kendi ürettiğiniz veya repoda hazır gelen modeli buraya ekleyiniz. Aşağıdaki Ayarlarla kontrol edebilirsiniz.
+Burada + simgesine basıp yeni bir network oluşturabilirsiniz. Cube AI kullanılırken seçebileceğimiz 3 farklı model tipi vardır. TFLite, Keras ve ONNX. Prebuilt olarak repoda paylaştığımız model bir TFLite modelidir, bu yüzden model olarak TFLite'ı seçip Browse ile kendi ürettiğiniz veya repoda hazır gelen modeli buraya ekleyiniz. Aşağıdaki ayarlarla kontrol edebilirsiniz.
 
 <div align="center">
   <img width="100%" height="100%" src="Additionals/CubeAI_Doc4.PNG">
 </div>
 <br />
 
-IOC dosyasını savelemeden önce modelin Analizi yapılması gerekmektedir. Bunun için X-CUBE-AI Configuration sekmesinde bulunan Analyze düğmesine basınız. Aşağıdaki gibi bir analiz sonucu elde etmeniz gerekmektedir.
+IOC dosyasını savelemeden önce modelin analizinin yapılması gerekmektedir. Bunun için X-CUBE-AI Configuration sekmesinde bulunan **Analyze** düğmesine basınız. Aşağıdaki gibi bir analiz sonucu elde etmeniz gerekmektedir.
 
 <div align="center">
   <img width="100%" height="100%" src="Additionals/CubeAI_Doc5.PNG">
@@ -36,7 +36,7 @@ IOC dosyasını savelemeden önce modelin Analizi yapılması gerekmektedir. Bun
 
 Analiz tamamlandıktan sonra CTRL+S tuş kombinasyonuna basıp IOC dosyasının kod oluşturmasını sağlayabilirsiniz.
 
-Ardından main.c içerisine gelerek aşağıdaki kodları gerekli yerlere ekleyiniz.
+Ardından ```AI_Workshop/Core/Src/main.c``` içerisine gelerek aşağıdaki kodları gerekli yerlere ekleyiniz.
 
 ```c
 /* USER CODE BEGIN Includes */
@@ -55,7 +55,7 @@ yorum satırları arasına
 #include "custom_bus.h"
 ```
 
-Gu kodları ekleyerek kullanacağımız kütüphaneleri main dosyamıza çekmiş olduk. Ardından:
+Bu kod satırlarını ekleyerek, kullanacağımız kütüphaneleri main dosyamıza çekmiş olduk. Ardından:
 
 ```c
 /* USER CODE BEGIN PV */
@@ -84,9 +84,9 @@ ISM330IS_Axes_t ism330_axes;
 kodlarını ekleyerek kodda kullanacağımız global variablelar eklenmiş oldu. Sırası ile 
 
 ```c
-/* USER CODE BEGIN PV */
+/* USER CODE BEGIN PFP */
 
-/* USER CODE END PV */
+/* USER CODE END PFP */
 ```
 yorum satırları arasına 
 ```c

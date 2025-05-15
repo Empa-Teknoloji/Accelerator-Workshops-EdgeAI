@@ -5,7 +5,7 @@
 
 # 1) Vitis-AI ile FPGA Platformlarında AI Uygulamaları Geliştirme
 
-Empa Electronics tarafından düzenlenen Accelerators Workshops serimizin "Uçta Yapay Zeka - Ankara" adımına hoş geldiniz.  
+Empa Electronics tarafından düzenlenen Accelerators Workshops etkinliğimize hoş geldiniz.  
 Bu kılavuz, açık kaynaklı makine öğrenimi kütüphaneleri ve literatür makine öğrenimi modelleri kullanılarak elde edilen bir derin öğrenme modelinin AMD ürünü FPGA platformlarında çözüm haline getirilme adımlarının uçtan uca incelendiği "YOLOv5 ile Kria Platformu Üzerinde Yaygın Nesnelerin Tespiti" uygulamamızın geliştirme adımlarında size rehberlik edecektir.
 
 Aktivite içeriği olan uygulama, AMD tarafından Vitis-AI ortamı kullanılarak FPGA tabanlı platformlarda açık kaynaklı bir nesne algılama AI modelinin uçtan uca uygulanmasını içeren, ham bir depo kaynağından başlayarak uçta konuşlandırılmış bir çözüme kadar kapsamlı bir demo çalışmasıdır. Model, COCO veri setinden insan, araba, köpek, cep telefonu, şişe, dizüstü bilgisayar gibi 80 yaygın sınıfı 2 boyutlu sınırlayıcı kutular olarak tespit edebilmektedir. Aktivite içeriğindeki demo çalışması, model mimarisi incelemesi, mimari modifikasyonları, niceleme ve daha fazlası dahil olmak üzere uyumluluk için gerekli tüm adımları sunmayı amaçlamaktadır.

@@ -7,6 +7,9 @@
 Empa Electronics tarafından düzenlenen Accelerators Workshops serimizin Uçta Yapay Zeka adımına hoş geldiniz.  
 Bu kılavuz, NanoEdge AI Studio kullanılarak geliştilecek "El Karakterleri Tanıma" uygulamamızın geliştirme adımlarında size rehberlik edecektir.
 
+## 0. NanoEdge AI Studio Nedir?
+NanoEdge AI Studio (NEAIS), **gömülü sistem mühendisleri için** oluşturulmuş bir **otomatik makine öğrenimi** platformudur. Platform, kullanıcıların teknik yapay zeka temeli olmadan, uçta yapay zeka *(Edge-AI)* algoritmaları oluşturmalarını ve bunları STMicroelectronics ürünleri için **ücretsiz** kullanmalarını sağlar.
+
 ## 1. Ön İşleme Süreçleri
 
 NanoEdge AI Studio esas olarak **sensör** uygulamaları için yapılmıştır ve sensör uygulamaları **zaman serisi** verilerinden oluşur. Bu nedenle, kullanıcıların bu uygulamalar için uygun giriş verilerini kullanmaları gerekir, böylece modeller doğru bir şekilde oluşturulabilir.
@@ -52,11 +55,16 @@ Uygun giriş verileri, toplanan verinin yapılmak istenen uygulamanın özellikl
 
 ![Untitled](./Additionals/NEAIS-Preprocesses/Untitled4.png)
 
+### 1.4. **Feature Importance (FI)**
+- Verileri birbirinden ayırmak için **yeterli olan ana özellikleri** (sütun, *feature*) belirleyerek, geriye kalan özelliklerin **modeli yavaşlatmaması için çıkarılması**nı sağlar.
+- Girdiler:
+    - Farklı sınıf dosyaları (time-series'e **dönüştürülmemiş** sinyal dosyaları)
+
 
 ## 2. Modeller
 
-### 2.1. **Anomaly Detection (AD)**
-
+### 2.1. **Detect Anomalies (AD)**
+Eski adıyla Anomaly Detection (AD).
 - Verilerde **anormallikleri tespit eder**,
 - **Dinamik model** kullanır.
 - **Dinamik modeller**, farklı kartlarda veya farklı koşullarda çalışmak için **uyum sağlama** yeteneği sunar. Bu, modelin kendini **uyarlamak** için **uçta tekrar eğitilme** yeteneğini getirir.
@@ -64,24 +72,24 @@ Uygun giriş verileri, toplanan verinin yapılmak istenen uygulamanın özellikl
 
 ![Untitled](./Additionals/NEAIS-Models/Untitled0.png)
 
-### 2.2. **1-Class Classification (1CC)**
-
+### 2.2. **Detect Outliers (O)**
+Eski adıyla 1 Class Classification (1CC).
 - Verilerde **anormallikleri tespit eder**,
 - **Statik** model kullanır.
 - NEAIS, hedef MCU'da **yalnızca sonuç veren önceden eğitilmiş** aykırı değer tespit modeli çıktısı verir.
 
 ![Untitled](./Additionals/NEAIS-Models/Untitled1.png)
 
-### 2.3. **n-Class Classification (nCC)**
-
+### 2.3. **Classify (C)**
+Eski adıyla n-Class Classification (nCC).
 - *n* farklı durumu **sınıflandırır**,
 - **Statik** bir model kullanır,
 - NEAIS, hedef MCU'da **yalnızca sonuç veren ve önceden eğitilmiş** sınıflandırma modeli çıktısı verir.
 
 ![Untitled](./Additionals/NEAIS-Models/Untitled2.png)
 
-### 2.4. **Extrapolation (E)**
-
+### 2.4. **Extrapolate (E)**
+Eski adıyla Extrapolation (E).
 - Önceki uygulamaların aksine, bilinmeyen bir **hedef değeri** tahmin eder (diğer tüm uygulamalar **ayrık değerli** sınıf çıktısı verir),
 - **Statik** bir model kullanır,
 - Veri setinde etiketler bekler, USB girdilerini **kabul etmez**,
@@ -142,13 +150,10 @@ NanoEdge AI Studio, sürecin hemen her kısmı için kullanıcılara **ipuçlar�
 
 ![Untitled](./Additionals/NEAIS-End-to-endDeploymentSteps/Untitled5.png)
 
-- **SD Karttan**
-    - Şu an için, SD Kart seçeneği sadece **From File** seçeneği ile yapılabilir durumdadır.
-
 **Veriyi içe aktardıktan sonra:**
 
-- Eksenler, verinin sütunlarıdır (features).
-- Veri uygunsa, NanoEdge AI Studio verilere **Fourier Dönüşümü** uygular, böylece sinyaller Frekans Domain'inde görülebilir.
+- Eksenler, verinin sütunlarındaki anlık ölçümlerin her birini ifade eder.
+- Veri uygunsa, NanoEdge AI Studio verilere **Fast Fourier Transfrom** uygular, böylece sinyaller Frekans Domain'inde görülebilir.
 
 ![Untitled](./Additionals/NEAIS-End-to-endDeploymentSteps/Untitled6.jpg)
 
