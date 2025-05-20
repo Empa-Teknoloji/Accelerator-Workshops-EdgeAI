@@ -1,3 +1,8 @@
+<p align="center">
+    <img src="../Additionals/Empa-Workshops-Template-Banner.jpg" alt="Accelerator Workshops" 
+    style="display: block; margin: 0 auto"/>
+</p>
+
 # STM32CubeAI Çıktısının MindBoard'a Implementasyonu
 Öncelikle CubeAI uygulamamız için yeni bir proje açacağız. Bunu da STM32CubeIDE içerisinde File->New->STM32 Project from an Existing STM32CubeMX Configuration File (.ioc)'a tıklayın. 
 <div align="center">
